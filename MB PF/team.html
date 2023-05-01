@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body> <div class="head">
+    <h2>Our team</h2>
+</div>
+    
+    <div class="contain">
+        
+        <div class="icon">
+            <div class="imgbox active" style="--i:1;"
+            data-id="content1">
+                <img src="./img11.png">
+            </div>
+            <div class="imgbox" style="--i:2;" 
+            data-id="content2">
+                <img src="./img2.jpg">
+            </div>
+            <div class="imgbox" style="--i:3;" 
+            data-id="content3">
+                <img src="./img3.jpg">
+            </div>
+            <div class="imgbox" style="--i:4;"
+             data-id="content4" >
+                <img src="./img4.jpg">
+            </div>
+            
+        </div>
+
+        <div class="content">
+            <div class="contentbx active" id="content1">
+            <div class="card">
+                <div class="imgbox ">
+                    <img src="img11.png" alt="">
+                </div>
+                
+                <div class="txtbox">
+                    <h2>SOMEONE FRAMOUS<br> <span>MANAGER</span></h2>
+                    <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitch"></i></a></li></ul>
+                </div>
+            </div>
+        </div>
+        <div class="contentbx " id="content2">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="img2.jpg" alt="">
+                </div>
+                <div class="txtbox">
+                    <h2>SOMEONE FRAMOUS<br> <span>MANAGER</span></h2>
+                    <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitch"></i></a></li></ul>
+                </div>
+            </div>
+        </div>
+        <div class="contentbx " id="content3">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="img3.jpg" alt="">
+                </div>
+                <div class="txtbox">
+                    <h2>SOMEONE FRAMOUS<br> <span>MANAGER</span></h2>
+                    <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitch"></i></a></li></ul>
+                </div>
+            </div>
+        </div>
+        <div class="contentbx " id="content4">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="img4.jpg" alt="">
+                </div>
+                <div class="txtbox">
+                    <h2>SOMEONE FRAMOUS<br> <span>MANAGER</span></h2>
+                    <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitch"></i></a></li></ul>
+                </div>
+            </div>
+        </div>
+      
+
+</div>
+    </div>
+    <script>
+        let imgbox = document.querySelectorAll('.imgbox');
+        let contentbx = document.querySelectorAll('.contentbx');
+        for(let i=0; i<imgbox.length; i++){
+           imgbox[i].addEventListener('mouseover', function(){
+              for(let i=0; i<contentbx.length; i++){
+                contentbx[i].className= 'contentbx';
+        }
+        document.getElementById(this.dataset.id).
+        className = 'contentbx active';
+       
+       
+        for(let i=0; i<imgbox.length; i++){
+            imgbox[i].className= 'imgbox';
+        }
+        this.className = ' imgbox active'
+})
+}
+    </script>
+</body>
+
+</html>
